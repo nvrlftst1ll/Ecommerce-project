@@ -1,0 +1,44 @@
+import { formatMoney } from "../../utils/formatMoney"
+import dayjs from "dayjs"
+
+
+
+export function OrderHeader({ order }) {
+
+    return (
+
+        <>
+
+            <div className="order-header">
+                <div className="order-header-left-section">
+
+
+                    <div className="order-date">
+                        <div className="order-header-label">Order Placed:</div>
+                        {/* Date */}
+                        <div>{dayjs(order.orderTimeMs).format("MMMM D")}</div>
+                    </div>
+
+                    <div className="order-total">
+                        <div className="order-header-label">Total:</div>
+                        {/* Price */}
+                        <div>{formatMoney(order.totalCostCents)}</div>
+                    </div>
+
+                </div>
+
+
+
+                <div className="order-header-right-section">
+                    <div className="order-header-label">Order ID:</div>
+
+                    {/* Id */}
+                    <div>{order.id}</div>
+                </div>
+            </div>
+
+        </>
+
+    )
+
+}
