@@ -5,8 +5,8 @@ import userEvent from "@testing-library/user-event"
 
 
 import axios from "axios";
-import { formatMoney } from "../../utils/formatMoney";
-import { useState } from "react";
+/* import { formatMoney } from "../../utils/formatMoney";
+import { useState } from "react"; */
 import { ProductContainer } from "./ProductContainer";
 
 

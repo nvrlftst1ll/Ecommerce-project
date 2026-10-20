@@ -50,12 +50,15 @@ export function ProductContainer({
 
 
   return (
-    <div className="product-container">
+    <div
+      className="product-container"
+      data-testid="product-container"
+    >
       <div className="product-image-container">
-        <img 
-          className="product-image" 
-          src={ProductImg} 
-          alt={ProductName} 
+        <img
+          className="product-image"
+          src={ProductImg}
+          alt={ProductName}
           data-testid="product-image"
         />
 
@@ -100,7 +103,7 @@ export function ProductContainer({
         Added
       </div>
 
-      <button 
+      <button
         className="add-to-cart-button button-primary"
         data-testid="add-to-cart-button"
         onClick={
