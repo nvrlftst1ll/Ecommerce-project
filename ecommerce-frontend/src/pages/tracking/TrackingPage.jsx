@@ -3,7 +3,7 @@ import './TrackingPage.css';
 
 
 
-export function TrackingPage() {
+export function TrackingPage({ cart }) {
 
 
     
@@ -15,7 +15,7 @@ export function TrackingPage() {
 
             <title>Tracking</title>
 
-            <Header />
+            <Header cart={cart} />
 
             <div className="tracking-page">
                 <div className="order-tracking">
